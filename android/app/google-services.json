@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "58533336412",
+    "project_id": "playgo-fb8e8",
+    "storage_bucket": "playgo-fb8e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58533336412:android:b52ba10c545fabae91dd99",
+        "android_client_info": {
+          "package_name": "com.example.playgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58533336412-7qf6o71gqmkcsgocaorhtslj5meh079r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.playgo",
+            "certificate_hash": "ad0b0a89e8520650d990e6bc72ca606a10282dfb"
+          }
+        },
+        {
+          "client_id": "58533336412-bapk34dknl15qcqkgg4mt2rb4hoedate.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6I12OxVYE0quSkQSGQzLJuRiU-T7ijv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58533336412-92bevg8hlc50o18vqri2f1b3baqjrkuc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "58533336412-fca68434t002414q88ot6rrnhiv3b7ev.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.playgo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
