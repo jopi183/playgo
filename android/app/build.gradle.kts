@@ -9,7 +9,6 @@ android {
     namespace = "com.example.playgo"
     compileSdk = 35
 
-    // Pakai NDK versi yang dibutuhkan plugin Firebase
     ndkVersion = "27.0.12077973"
 
     compileOptions {

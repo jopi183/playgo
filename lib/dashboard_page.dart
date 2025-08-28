@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-
+import 'map_page.dart';
 import 'login_page.dart'; 
 
 class DashboardPage extends StatelessWidget {
@@ -94,17 +94,18 @@ class DashboardPage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _buildMenuButton(
-                          text: "Mulai Petualangan",
-                          gradient: const LinearGradient(
-                            colors: [Color(0xFFFF6A5B), Color(0xFFE14A1B)],
-                          ),
-                          onTap: () {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text("Mulai Petualangan diklik")),
-                            );
-                          },
+                      _buildMenuButton(
+                        text: "Mulai Petualangan",
+                        gradient: const LinearGradient(
+                          colors: [Color(0xFFFF6A5B), Color(0xFFE14A1B)],
                         ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const MapPage()),
+                          );
+                        },
+                      ),
                         const SizedBox(height: 20),
                         _buildMenuButton(
                           text: "Tanya Master",
