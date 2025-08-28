@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'login_page.dart';
-import 'dashboard_page.dart'; // tambahkan ini
-import 'package:firebase_auth/firebase_auth.dart'; // untuk cek user login
+import 'dashboard_page.dart'; 
+import 'package:firebase_auth/firebase_auth.dart'; 
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 

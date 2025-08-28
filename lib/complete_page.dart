@@ -33,7 +33,6 @@ class _CompletePageState extends State<CompletePage> {
     setState(() => _loading = true);
 
     try {
-      // ✅ Buat akun di Firebase Authentication
       UserCredential cred = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
         email: widget.email,
@@ -43,7 +42,6 @@ class _CompletePageState extends State<CompletePage> {
       User? user = cred.user;
 
       if (user != null) {
-        // ✅ Simpan profil ke Firestore
         await _authService.saveUserProfile(
           uid: user.uid,
           firstName: _firstNameController.text,
@@ -55,7 +53,6 @@ class _CompletePageState extends State<CompletePage> {
               : _referralController.text,
         );
 
-        // ✅ Navigasi ke halaman sukses
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const SuccessPage()),
@@ -76,7 +73,6 @@ class _CompletePageState extends State<CompletePage> {
       backgroundColor: Colors.grey[200],
       body: Column(
         children: [
-          // 🔹 Header ungu melengkung dengan back button
           Container(
             width: double.infinity,
             padding: const EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 30),
@@ -107,7 +103,6 @@ class _CompletePageState extends State<CompletePage> {
             ),
           ),
 
-          // 🔹 Form Input
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(20),
@@ -136,7 +131,6 @@ class _CompletePageState extends State<CompletePage> {
                     ),
                     const SizedBox(height: 30),
 
-                    // 🔹 Tombol Sign Up
                     ElevatedButton(
                       onPressed: _loading ? null : _submit,
                       style: ElevatedButton.styleFrom(
@@ -173,7 +167,6 @@ class _CompletePageState extends State<CompletePage> {
     );
   }
 
-  // 🔹 Custom Input Field dengan Icon
   Widget _buildField(
     String label,
     TextEditingController controller, {

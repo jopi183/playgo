@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import 'login_page.dart'; // <-- pastikan sesuai dengan path file LoginPage kamu
+import 'login_page.dart'; 
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -53,8 +53,8 @@ class DashboardPage extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.pop(ctx); // Tutup dialog
-                _signOut(context); // Sign-out dan ke LoginPage
+                Navigator.pop(ctx); 
+                _signOut(context);
               },
               child: const Text("Ya, Keluar"),
             ),
@@ -71,7 +71,6 @@ class DashboardPage extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            // Konten utama
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
